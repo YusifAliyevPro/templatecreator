@@ -1,0 +1,336 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+/*Some Variables*/
+:root {
+    --main-color: #115bfb;
+    --text-color: rgb(33, 37, 41);
+    --bg-color: #fff;
+    --darkest-color: #0d1013;
+    --dark-color: #222831;
+    --trail-color: rgb(220, 53, 69);
+  }
+
+body {
+    background: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    margin-top: 8px;
+    color: var(--main-color);
+    width: auto;
+    text-align: center;
+}
+
+.template {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.inputs {
+    position: relative;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 10px;
+    color: #dddddd;
+    background-color: var(--dark-color);
+}
+
+.inputs::placeholder {
+    color: #888888;
+}
+
+.shareButton {
+    position: relative;
+    width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--main-color);
+    user-select: none;
+    cursor: pointer;
+}
+
+.clearform {
+    position: fixed;
+    height: auto;
+    width: auto;
+    bottom: 4%;
+    right: 4%;
+    display: none;
+}
+
+.bx {
+    position: relative;
+    padding: 10px;
+    border-radius: 50px;
+    background: var(--darkest-color);
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.sharing {
+    position: fixed;
+    width: fit-content;
+    height: min-content;
+    left: 0;
+    top: 52%;
+    bottom: 48%;
+    display: none;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 9997;
+    background: #13171d;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .sharing h6 {
+    font-size: 28px;
+    margin-bottom: 11px;
+    margin-left: 5px;
+    color: #fff;
+  }
+  
+  .sharing-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sharing-button {
+    position: relative;
+    margin-bottom: 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  
+  .sharing-button img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .failed-message {
+    position: fixed;
+    width: unset;
+    top: unset;
+    bottom: 0%;
+    margin-bottom: 110px;
+    margin-left: unset;
+    border-radius: 5px;
+    display: none;
+    padding: 5px;
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  
+  .success-message {
+    position: fixed;
+    width: max-content;
+    border-radius: 5px;
+    top: 57%;
+    margin-left: 305px;
+    display: none;
+    padding: 5px;
+    background-color: var(--main-color);
+    color: #fff;
+  }
+
+  @media (max-width: 1080px) {
+
+    .sharing {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 23px;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
+      background: #171c24;
+    }
+    
+    .sharing h6 {
+      font-size: 28px;
+      margin-bottom: 11px;
+    }
+    
+    .sharing-buttons {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .sharing-button {
+      position: relative;
+      margin-left: 20px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+    
+    .sharing-button img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .sharing-buttons .whatsapp {
+      margin-left: 0;
+    }
+    
+    .sharing-buttons .other {
+      margin-left: 15px;
+    }
+    
+    .success-message {
+      position: fixed;
+      bottom: 150px;
+      border-radius: 5px;
+      display: none;
+      padding: 5px;
+      background-color: var(--main-color);
+      color: #fff;
+    }
+
+
+}
+
+
+  @media (max-width: 472px) {
+
+    .shareButton {
+        margin-bottom: 100px;
+    }
+
+    .clearform {
+        position: fixed;
+        height: auto;
+        width: auto;
+        bottom: 0%;
+        margin-bottom: 21px;
+        right: 6%;
+        display: none;
+    }
+
+    .sharing {
+      position: fixed;
+      width: max-content;
+      height: fit-content;
+      bottom: 0;
+      top: unset;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      z-index: 9995;
+      margin-bottom: 8px;
+      background: #171c24;
+      padding: 8px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 10px;
+    }
+    
+    .sharing h6 {
+      font-size: 28px;
+      margin-bottom: 11px;
+      margin-left: 10px;
+      display: none;
+    }
+    
+    .sharing-buttons {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: unset;
+    }
+    
+    .sharing-button {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      margin-bottom: unset;
+      margin-bottom: 4px;
+    }
+    
+    
+    .sharing-button img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .success-message {
+      position: fixed;
+      width: unset;
+      top: unset;
+      bottom: unset;
+      margin-bottom: 150px;
+      margin-left: unset;
+      border-radius: 5px;
+      display: none;
+      padding: 5px;
+      background-color: var(--main-color);
+      color: #fff;
+    }
+
+    .failed-message {
+        position: fixed;
+        width: unset;
+        top: unset;
+        bottom: 2%;
+        margin-bottom: 15px;
+        margin-left: unset;
+        border-radius: 5px;
+        display: none;
+        padding: 5px;
+        background-color: var(--main-color);
+        color: #fff;
+      }
+}

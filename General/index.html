@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template Creator</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="template">
+            <h1>Whatsapp Template Creator</h1>
+            <input type="text" spellcheck="false" class="inputs" id="FullName" placeholder="Ad Soyad">
+            <input type="text" spellcheck="false" class="inputs" id="birthdate" placeholder="Təvəllüd">
+            <textarea name="İştirak etdiyiniz yarışlar və layihələr" spellcheck="false" class="inputs" id="Competetions"  rows="10" placeholder="İştirak etdiyiniz yarışlar və layihələr"></textarea>
+            <input type="text" name="" spellcheck="false" class="inputs" id="datecomp" placeholder="Neçə ildir ki, intellektual yarışlarda iştirak edirsiz?">
+            <textarea name="Kluba qatılmaqda əsas motivasiyanız nədir?" spellcheck="false" class="inputs" id="motiv"  rows="10" placeholder="Kluba qatılmaqda əsas motivasiyanız nədir?"></textarea>
+            <a class="shareButton">Share</a>
+        </div>
+        <div class="clearform">
+            <i class='bx bx-x'></i>
+        </div>
+        <div class="sharing">
+            <h6>Paylaş</h6>
+            <div class="sharing-buttons">
+              <div class="sharing-button whatsapp" id="whatsapp-sharing"><img src="/whatsapp.svg" alt="Whatsapp"></div>
+              <div class="sharing-button copy" id="copy-sharing"><img src="/copy-link.svg" alt="Copy"></div>
+            </div>
+            <div id="success-message" class="success-message">Mətin kopyalandı!</div>
+          </div>
+
+          <div id="failed-message" class="failed-message">Bütün Xanaları Doldurun!</div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
